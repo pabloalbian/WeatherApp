@@ -2,18 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Test</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="container">
-      <fieldset>
+	<!-- NAVBAR STARTS HERE-->
+	<nav class="navbar navbar-expand-md bg-dark fixed-top">
+		<a class="navbar-brand" href="#">WEATHER APP</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#course">Login</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#features">About</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+    <!-- NAVBAR ENDS HERE -->
+
+
+    <div class="initial-form text-center">
         <form action="/" method="post">
-          <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
-          <input type="submit" class="ghost-button" value="Get Weather">
+        	<input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+    	    <input type="submit" class="ghost-button" value="Get Weather">
         </form>
-      </fieldset>
     </div>
+
+
   </body>
 </html>
