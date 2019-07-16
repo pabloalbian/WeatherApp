@@ -28,6 +28,7 @@ body {
 	letter-spacing: 3px;
 }
 
+
 /* Index Styling */
 .initial-form {
     width: 100%;
@@ -35,4 +36,19 @@ body {
     position: absolute;
     top: 50%;
     z-index: 1;
+}
+
+form input {
+	background-color: rgba(0,0,0,.2);
+	border: 1px solid #555;
+  	outline: none;
+  	font-weight: bold;
+}
+
+#city {
+	width: 20%;
+}
+
+#city:focus {
+  background-color: white;
 }
