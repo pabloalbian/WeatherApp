@@ -19,17 +19,20 @@ body {
 .nav-item a {
 	margin: auto 2em;
 	text-transform: uppercase;
-	color: black;
+	color: #76323F!important;
 	text-align: center;
 }
 
 .navbar-brand {
-	color: black;
+	color: #76323F!important;
 	font-weight: 700;
-	font-size: 1.25em;
+	font-size: 1.50em;
 	letter-spacing: 3px;
 }
 
+.navbar-toggler:focus {
+	outline: none!important;
+}
 
 /* Index Styling */
 .initial-form {
@@ -41,18 +44,15 @@ body {
 }
 
 form input {
-	background-color: rgba(0,0,0,.2);
-	border: 1px solid #555;
+	background-color: rgba(0,0,0,.1);
+	border: 1px solid #76323F;
   	outline: none;
   	font-weight: bold;
+  	font-family: 'Montserrat', sans-serif;
 }
 
 #city {
 	width: 20%;
-}
-
-#city:focus {
-  background-color: white;
 }
 
 /* End Index Styling */
@@ -67,19 +67,27 @@ form input {
     z-index: 1;
 }
 
+.forecast h3 {
+	font-weight: bold;
+}
+
 .heading {
     font-size: 1.9rem; 
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1.9rem;
-    font-weight: bold;
 }
+
 .heading-underline {
-    width: 3rem;
-    height: .2rem;
-    background-color: #FF5A09;
+    width: 85%;
+    height: .1rem;
+    background-color: #76323F;
     margin: 0 auto 2rem;
     
+}
+
+.lead {
+	font-size: 2em;
 }
 
 .fas {
@@ -93,7 +101,7 @@ form input {
 
 @media only screen and (max-width : 768px) {
    	.navbar-collapse { 
-   		background-color: rgba(224, 255, 255,1);
+   		background-color: rgba(215, 206, 199, 1);
    		margin-right: 1em;
    	}
    	.nav-link {
