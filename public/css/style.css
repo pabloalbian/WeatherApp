@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background: url(../images/background1.png) no-repeat center center fixed; 
+	background: url(../images/background3.png) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -52,3 +52,37 @@ form input {
 #city:focus {
   background-color: white;
 }
+
+/* End Index Styling */
+
+/* Show page styling */
+
+.forecast {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+}
+
+.heading {
+    font-size: 1.9rem; 
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+    font-weight: bold;
+}
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: #FF5A09;
+    margin: 0 auto 2rem;
+    
+}
+
+.fas {
+	margin: 1em auto;
+}
+
+
+/* End Show page styling */

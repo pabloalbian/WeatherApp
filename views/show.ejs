@@ -1,12 +1,33 @@
 <% include partials/header %>
+<div class="forecast">
+	<div class="row text-center">
+		<div class="col-12">
+			<h3 class="heading"><%= currentWeather.name %>, <%= currentWeather.sys.country %></h3>
+			<div class="heading-underline"></div>
+		</div>
 
-
-<% if(weather !== null){ %>
-          <p><%= weather %></p>
-        <% } %>
-
-        <% if(error !== null){ %>
-          <p><%= error %></p>
-        <% } %>
+		<div class="col-md-4">
+			<h3>Temperature</h3>
+			<div class="condition">
+				<i class="fas fa-thermometer-half fa-3x"></i>
+			</div>
+			<p class="lead"><%= currentWeather.main.temp %>ºC</p>
+		</div>
+		<div class="col-md-4">
+			<h3>Currently</h3>
+			<div class="condition">
+				<i class="fas fa-cloud-sun fa-3x"></i>			
+			</div>
+			<p class="lead"><%= currentWeather.weather[0].description %></p>
+		</div>
+		<div class="col-md-4">
+			<h3>Wind</h3>
+			<div class="condition">
+				<i class="fas fa-wind fa-3x"></i>
+			</div>
+			<p class="lead"><%= currentWeather.wind.speed %></p>
+		</div>
+	</div>
+</div>
 
 <% include partials/footer %>

@@ -28,8 +28,7 @@ app.post('/', function (req, res) {
 	      	if(weather.main == undefined){
 	        	res.render('show', {weather: null, error: 'Error, please try again'});
 	    	} else {
-	        	let weatherText = `It's ${weather.main.temp} degrees in ${weather.name}!`;
-	        	res.render('show', {weather: weatherText, error: null});
+	        	res.render('show', {currentWeather: weather, error: null});
 	    	}
 	    }
 	});
