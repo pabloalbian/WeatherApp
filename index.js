@@ -26,12 +26,18 @@ app.post('/', function (req, res) {
 	    } else {
 	      	let weather = JSON.parse(body);
 	      	if(weather.main == undefined){
+	      		console.log("Error, undefined weather info");
 	        	res.render('show', {weather: null, error: 'Error, please try again'});
 	    	} else {
 	        	res.render('show', {currentWeather: weather, error: null});
 	    	}
 	    }
 	});
+});
+
+//ABOUT ROUTE
+app.get("/about", function(req, res){
+	res.render("about");
 });
 
 
