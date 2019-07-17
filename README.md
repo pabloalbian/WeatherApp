@@ -1,5 +1,6 @@
 # WeatherApp
 
+<<<<<<< HEAD
 
 This app shows the current weather of the specified city
 
