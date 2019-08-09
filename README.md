@@ -5,6 +5,7 @@ This app shows the current weather of the specified city
 
 Website app developed with HTML+CSS+Js using Express and NodeJS for the server side. It gets the weather info from Openweathermap.org free API.
 
+This site is online under [Albian Weather](https://albianweather.herokuapp.com/)
 
 ## To be added
 
