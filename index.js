@@ -38,14 +38,14 @@ app.post('/', function (req, res) {
 });
 
 //CITIES ROUTE
-app.get("/cities", function(req, res){
-  var cities = [
+app.get("/places", function(req, res){
+  var places = [
     {name: "Hamburg", country: "Germany"},
     {name: "Bremen", country: "Germany"},
     {name: "Berlin", country: "Germany"}
   ];
 
-  res.render("cities");
+  res.render("places");
 });
 
 //ABOUT ROUTE
