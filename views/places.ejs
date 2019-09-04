@@ -1,1 +1,8 @@
 <h1>This is the cities page</h1>
+
+<% places.forEach(function(place){ %>
+  <div>
+    <h4><%= place.name %></h4>
+    <p><%= place.country %></p>
+  </div>
+<% }) %>

@@ -45,7 +45,7 @@ app.get("/places", function(req, res){
     {name: "Berlin", country: "Germany"}
   ];
 
-  res.render("places");
+  res.render("places", {places:places});
 });
 
 //ABOUT ROUTE
