@@ -37,6 +37,17 @@ app.post('/', function (req, res) {
 	});
 });
 
+//CITIES ROUTE
+app.get("/cities", function(req, res){
+  var cities = [
+    {name: "Hamburg", country: "Germany"},
+    {name: "Bremen", country: "Germany"},
+    {name: "Berlin", country: "Germany"}
+  ];
+
+  res.render("cities");
+});
+
 //ABOUT ROUTE
 app.get("/about", function(req, res){
 	res.render("about");
