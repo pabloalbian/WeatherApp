@@ -50,9 +50,13 @@ app.get("/places", function(req, res){
 
 app.post("/places", function(req, res){
   // Get data from form
-
+  res.send()
   //Redirect to places webpage
-})
+});
+
+app.get("/places/new", function(req, res){
+  res.render("new.ejs");
+});
 
 //ABOUT ROUTE
 app.get("/about", function(req, res){
