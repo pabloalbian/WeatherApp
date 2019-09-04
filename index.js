@@ -48,6 +48,12 @@ app.get("/places", function(req, res){
   res.render("places", {places:places});
 });
 
+app.post("/places", function(req, res){
+  // Get data from form
+
+  //Redirect to places webpage
+})
+
 //ABOUT ROUTE
 app.get("/about", function(req, res){
 	res.render("about");
