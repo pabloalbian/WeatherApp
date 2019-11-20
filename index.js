@@ -37,10 +37,31 @@ app.post('/', function (req, res) {
 	});
 });
 
+//CITIES ROUTE
+app.get("/places", function(req, res){
+  var places = [
+    {name: "Hamburg", country: "Germany"},
+    {name: "Bremen", country: "Germany"},
+    {name: "Berlin", country: "Germany"}
+  ];
+
+  res.render("places", {places:places});
+});
+
+app.post("/places", function(req, res){
+  // Get data from form
+  res.send("You hit the POST route")
+  //Redirect to places webpage
+});
+
+app.get("/places/new", function(req, res){
+  res.render("new.ejs");
+});
+
 //ABOUT ROUTE
 app.get("/about", function(req, res){
 	res.render("about");
 });
 
 
-app.listen(port, () => console.log('Example app listening on port 3000!'));
+app.listen(port, () => console.log('Example app listening on port 8080!'));
