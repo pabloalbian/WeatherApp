@@ -50,7 +50,7 @@ app.get("/places", function(req, res){
 
 app.post("/places", function(req, res){
   // Get data from form
-  res.send()
+  res.send("You hit the POST route")
   //Redirect to places webpage
 });
 
